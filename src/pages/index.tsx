@@ -4,11 +4,12 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import Experience from "../components/Experience";
 import Skills from "../components/Skills";
+import Projects from "../components/Projects";
 
 export default function Home() {
   return (
     <div
-      className="bg-[rgb(36,36,36)] text-white h-screen snap-proximity snap-y 
+      className="bg-[rgb(36,36,36)] text-white h-screen snap-mandatory snap-y 
     overflow-y-scroll z-0 overflow-x-hidden scroll-smooth"
     >
       <Head>
@@ -40,6 +41,9 @@ export default function Home() {
       </section>
 
       {/* Projects */}
+      <section id="projects" className="snap-start">
+        <Projects />
+      </section>
 
       {/* Contact Me */}
     </div>
