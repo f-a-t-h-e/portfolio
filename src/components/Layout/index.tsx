@@ -23,7 +23,7 @@ const Layout = ({ children, title, description }: Props) => {
       <div
         className="bg-black text-white h-screen snap-mandatory snap-y 
     overflow-y-scroll z-0 overflow-x-hidden scroll-smooth 
-    scrollbar scrollbar-track-gray-200/30 scrollbar-thumb-black"
+    md:scrollbar scrollbar-track-gray-200/30 scrollbar-thumb-black"
       >
         <Header />
         <main>{children}</main>
