@@ -31,7 +31,7 @@ const Header = (props: Props) => {
 
         <motion.div className="flex flex-row items-center hover:text-white cursor-pointer">
           <FiMail />
-          <p className="uppercase hidden md:inline-flex text-sm ">
+          <p className="uppercase hidden md:inline-flex text-sm md:ml-1">
             Get in touch
           </p>
         </motion.div>
