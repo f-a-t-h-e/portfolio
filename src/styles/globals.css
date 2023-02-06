@@ -1,6 +1,22 @@
 @tailwind base;
+::-webkit-scrollbar {
+  background-color: #5a5a5a33;
+  color: #ebe6de;
+  border: 1px solid #ffd70059;
+}
+::-webkit-scrollbar-corner {
+  background-color: #2f31313e;
+}
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  border: 1px solid gold;
+}
 @tailwind components;
 @tailwind utilities;
+
+* {
+  @apply /*[--scroll-mt:9.875rem]*/ scroll-smooth;
+}
 
 @layer components {
   .navButton {
