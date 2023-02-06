@@ -34,12 +34,12 @@ const Hero = (props: Props) => {
         </div>
       </div>
 
-      <div className="z-20">
-        <h2 className="text-sm uppercase text-gray-500 pd-2 tracking-[1rem]">
+      <div className="flex items-center justify-center flex-col z-[1] relative mt-32">
+        <h2 className="text-sm text-center uppercase text-[gold] pd-2 tracking-[1rem]">
           Fullstack developer
         </h2>
-        <h1 className="text-5xl lg:text-6xl font-semibold px-10 mb-6">
-          <span className="-mr-3">{text}</span>
+        <h1 className="text-5xl text-center lg:text-6xl font-semibold h-0">
+          <span className="-mr-2">{text}</span>
           <Cursor cursorColor="#7ABBA" />
         </h1>
       </div>
