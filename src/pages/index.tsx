@@ -22,7 +22,7 @@ export default function Home() {
       </section> */}
 
       {/* Skills */}
-      <section id="skills" className="snap-start">
+      <section id="languages & tools" className="snap-start">
         <Skills />
       </section>
 
