@@ -31,7 +31,7 @@ const Layout = ({ children, title, description }: Props) => {
         {/* Hero */}
         <section
           id="hero"
-          className="flex justify-center items-center mt-[50vh] h-[1px] snap-start mb-[50vh] md:mb-[unset]"
+          className="flex justify-center items-center mt-[50vh] h-[1px] w-screen snap-start mb-[50vh] md:mb-32"
         >
           <Hero />
         </section>
