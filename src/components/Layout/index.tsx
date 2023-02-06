@@ -1,6 +1,8 @@
 import Head from "next/head";
 import React from "react";
 import Header from "../Header";
+import Hero from "../Hero";
+import Navbar from "../Navbar";
 
 type Props = {
   children: React.ReactNode;
@@ -21,11 +23,19 @@ const Layout = ({ children, title, description }: Props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div
-        className="bg-black text-white h-screen snap-mandatory snap-y 
+        className="bg-black text-white h-screen 
     overflow-y-scroll z-0 overflow-x-hidden scroll-smooth 
     md:scrollbar scrollbar-track-gray-200/30 scrollbar-thumb-black"
       >
         <Header />
+        {/* Hero */}
+        <section
+          id="hero"
+          className="flex justify-center items-center mt-[50vh] h-[1px] snap-start mb-[50vh] md:mb-[unset]"
+        >
+          <Hero />
+        </section>
+        <Navbar />
         <main>{children}</main>
       </div>
     </>
