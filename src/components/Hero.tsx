@@ -38,7 +38,7 @@ const Hero = (props: Props) => {
         <h2 className="text-sm text-center uppercase text-[gold] pd-2 tracking-[1rem]">
           Fullstack developer
         </h2>
-        <h1 className="text-5xl text-center lg:text-6xl font-semibold h-0">
+        <h1 className="text-5xl w-screen lg:text-6xl font-semibold h-0 px-4 md:text-center">
           <span className="-mr-2">{text}</span>
           <Cursor cursorColor="#7ABBA" />
         </h1>
