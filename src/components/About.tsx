@@ -37,14 +37,15 @@ const About = (props: Props) => {
       <div className="space-y-10 px-0 md:px-10">
         <h4 className=" text-4xl font-semibold ">
           Here is a{" "}
-          <span className="underline decoration-[#F7ABBA]/50">ltitle</span>{" "}
-          ackground
+          <span className="underline decoration-[#F7ABBA]/50">little</span>{" "}
+          background
         </h4>
 
         <p className="text-base">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
-          quidem sapiente soluta totam sint cupiditate, similique ducimus iusto,
-          sunt suscipit ullam error dolores tenetur.
+          I love making websites & platforms.
+          <br />
+          I enjoy coding & maths.
+          <br />
         </p>
       </div>
     </motion.div>
