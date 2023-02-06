@@ -18,42 +18,30 @@ const Hero = (props: Props) => {
     delaySpeed: 2000,
   });
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
+    <div className="w-[100%]">
       <HeroBackground />
-      <div className="w-32 h-32 mx-auto relative">
-        <Image
-          className="rounded-full object-cover"
-          src="/assets/photo.png"
-          alt="Photo"
-          fill
-          sizes="(max-width: 768px) 6rem,
+      <div className="relative flex justify-center items-center">
+        <div className="absolute w-32 h-32">
+          <Image
+            className="rounded-full object-cover"
+            src="/assets/photo.png"
+            alt="Photo"
+            fill
+            sizes="(max-width: 768px) 6rem,
               (max-width: 1200px) 8rem,
               8rem"
-        />
+          />
+        </div>
       </div>
-      <div className="z-20">
-        <h2 className="text-sm uppercase text-gray-500 pd-2 tracking-[1rem]">
+
+      <div className="flex items-center justify-center flex-col z-[1] relative mt-32">
+        <h2 className="text-sm text-center uppercase text-[gold] pd-2 tracking-[1rem]">
           Fullstack developer
         </h2>
-        <h1 className="text-5xl lg:text-6xl font-semibold px-10">
-          <span className="-mr-3">{text}</span>
+        <h1 className="text-5xl w-screen lg:text-6xl font-semibold h-0 px-4 md:text-center">
+          <span className="-mr-2">{text}</span>
           <Cursor cursorColor="#7ABBA" />
         </h1>
-
-        <div className="pt-5">
-          <Link href="#about">
-            <button className="heroButton">About</button>
-          </Link>
-          <Link href="#experience">
-            <button className="heroButton">Experience</button>
-          </Link>
-          <Link href="#skills">
-            <button className="heroButton">Skills</button>
-          </Link>
-          <Link href="#projects">
-            <button className="heroButton">Projects</button>
-          </Link>
-        </div>
       </div>
     </div>
   );

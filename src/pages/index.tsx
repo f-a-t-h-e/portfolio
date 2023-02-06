@@ -11,11 +11,6 @@ import Layout from "../components/Layout";
 export default function Home() {
   return (
     <Layout>
-      {/* Hero */}
-      <section id="hero" className="snap-start">
-        <Hero />
-      </section>
-
       {/* About */}
       <section id="about" className="snap-center">
         <About />
