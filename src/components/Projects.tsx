@@ -19,8 +19,7 @@ md:flex-row max-w-full h-screen justify-evenly xl:space-y-0 mx-auto overflow-hid
 
       <div
         className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20
-      scroll-smooth 
-      scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7ABBA]/80"
+      scroll-smooth"
       >
         {projects.map((project) => (
           <div
