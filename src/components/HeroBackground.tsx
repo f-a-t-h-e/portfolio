@@ -16,7 +16,7 @@ const HeroBackground = (props: Props) => {
       transition={{
         duration: 2.5,
       }}
-      className="relative flex justify-center items-center"
+      className="relative flex justify-center items-center z-0"
     >
       <div className="bag absolute border border-yellow-500 rounded-full h-[200px] w-[200px]  animate-ping" />
       <div className="absolute border border-yellow-800 rounded-full h-[300px] w-[300px] " />
