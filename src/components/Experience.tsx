@@ -20,8 +20,7 @@ const Experience = (props: Props) => {
 
       <div
         className="w-[600px] md:w-[700px] xl:w-[1000px] flex space-x-5 overflow-x-scroll p-10 
-      snap-x snap-mandatory scroll-smooth 
-      scrollbar scrollbar-track-gray-200/30 scrollbar-thumb-black"
+      snap-x snap-mandatory scroll-smooth"
       >
         <ExperienceCard />
         <ExperienceCard />
