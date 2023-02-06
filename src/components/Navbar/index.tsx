@@ -9,9 +9,9 @@ const Navbar = (props: Props) => {
       <Link href="#about">
         <button className="navButton border-x-0">About</button>
       </Link>
-      <Link href="#experience">
+      {/* <Link href="#experience">
         <button className="navButton">Experience</button>
-      </Link>
+      </Link> */}
       <Link href="#skills">
         <button className="navButton">Skills</button>
       </Link>
