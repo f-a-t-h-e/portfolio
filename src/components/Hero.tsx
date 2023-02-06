@@ -18,21 +18,22 @@ const Hero = (props: Props) => {
     delaySpeed: 2000,
   });
   return (
-    <div className="translate-y-[-50%] flex flex-col space-y-8 items-center justify-center text-center ">
-      {/* <div className="absolute top-[50] right-[50] translate-y-[-50%] translate-x-[-50%]"> */}
+    <div className="w-[100%]">
       <HeroBackground />
-      {/* </div> */}
-      <div className="w-32 h-32 mx-auto relative">
-        <Image
-          className="rounded-full object-cover"
-          src="/assets/photo.png"
-          alt="Photo"
-          fill
-          sizes="(max-width: 768px) 6rem,
+      <div className="relative flex justify-center items-center">
+        <div className="absolute w-32 h-32">
+          <Image
+            className="rounded-full object-cover"
+            src="/assets/photo.png"
+            alt="Photo"
+            fill
+            sizes="(max-width: 768px) 6rem,
               (max-width: 1200px) 8rem,
               8rem"
-        />
+          />
+        </div>
       </div>
+
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pd-2 tracking-[1rem]">
           Fullstack developer
