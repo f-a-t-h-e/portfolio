@@ -37,7 +37,7 @@ const About = (props: Props) => {
       <div className="space-y-10 px-0 md:px-10">
         <h4 className=" text-4xl font-semibold ">
           Here is a{" "}
-          <span className="underline decoration-[#F7ABBA]/50">little</span>{" "}
+          <span className="underline decoration-[#F7ABBA]/50">brief</span>{" "}
           background
         </h4>
 
