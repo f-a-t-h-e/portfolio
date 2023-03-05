@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { TbBrandCss3, TbBrandHtml5, TbBrandJavascript } from "react-icons/tb";
 import React from "react";
 
 type Props = {};
@@ -26,28 +27,11 @@ const ExperienceCard = (props: Props) => {
       <div className="px-0 md:px-10">
         <h4 className="text-4xl font-light">BACKEND</h4>
         <p className="text-2xl font-bold mt-1">Myself</p>
-        <div className="flex space-x-2 my-2 ">
-          {/* TO_DO : Make these icons instead of silly images */}
-          <img
-            className="h-10 w-10 rounded-full"
-            src="/assets/photo.png"
-            alt="skill"
-          />
-          <img
-            className="h-10 w-10 rounded-full"
-            src="/assets/photo.png"
-            alt="skill"
-          />
-          <img
-            className="h-10 w-10 rounded-full"
-            src="/assets/photo.png"
-            alt="skill"
-          />
-          <img
-            className="h-10 w-10 rounded-full"
-            src="/assets/photo.png"
-            alt="skill"
-          />
+        <div className="flex space-x-2 my-2 text-7xl">
+          {/* TO_DO : Make these dynamic */}
+          <TbBrandJavascript />
+          <TbBrandCss3 />
+          <TbBrandHtml5 />
         </div>
         <p className="uppercase py-5 text-gray-300 ">Started... - Ended...</p>
 

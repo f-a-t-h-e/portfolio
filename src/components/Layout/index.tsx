@@ -25,7 +25,7 @@ const Layout = ({ children, title, description }: Props) => {
       <div
         className="bg-black text-white h-screen 
     overflow-y-scroll z-0 overflow-x-hidden scroll-smooth 
-    md:scrollbar scrollbar-track-gray-200/30 scrollbar-thumb-black selection:bg-[#322a0074] selection:text-white"
+    selection:bg-[#322a0074] selection:text-white"
       >
         <Header />
         {/* Hero */}
