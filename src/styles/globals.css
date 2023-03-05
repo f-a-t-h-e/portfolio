@@ -17,6 +17,9 @@
 }
 
 @layer components {
+  .skills-parent > div {
+    @apply animate-flowing-right
+  }
   .navButton {
     @apply border-x px-6 py-2 border-[#322a00] uppercase text-sm tracking-widest
      text-gray-500 transition-all hover:border-[#322a00] hover:text-white hover:bg-[#322a00];
