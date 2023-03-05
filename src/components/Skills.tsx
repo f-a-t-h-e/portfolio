@@ -23,6 +23,7 @@ import {
   SiStyledcomponents,
   SiTailwindcss,
   SiTypescript,
+  SiFirebase,
 } from "react-icons/si";
 
 type Props = {};
@@ -112,6 +113,10 @@ const skills = [
     icon: SiGit,
     name: "Git",
   },
+  {
+    icon: SiFirebase,
+    name: "Firebase",
+  },
 ];
 const Skills = (props: Props) => {
   return (
@@ -120,18 +125,38 @@ const Skills = (props: Props) => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       className="flex flex-col relative text-center items-center
-    max-w-[2000px] xl:px-10 min-h-screen justify-evenly xl:space-y-0 mx-auto"
+    max-w-[2000px] xl:px-10 min-h-screen justify-evenly xl:space-y-0 mx-auto
+    overflow-x-hidden
+    "
+    
     >
-      <h3 className="text-center uppercase tracking-[1.3rem] text-gray-500 text-2xl">
+      <h3 className="text-center uppercase tracking-[1.3rem] text-gray-500 relative text-2xl">
         Languages & Tools
       </h3>
 
-      <div className="flex gap-5 flex-wrap max-w-full p-11">
-        {skills.map((skill, i) => (
-          <div className="w-[5rem] h-[5rem]" key={i}>
-            <skill.icon className="w-full h-full" />
-          </div>
-        ))}
+      <div className="flex flex-row items-center skills-parent
+      ">
+        <div className="flex gap-5">
+          {skills.map((skill, i) => (
+            <div className="w-[5rem] h-[5rem]" key={i}>
+              <skill.icon className="w-full h-full" />
+            </div>
+          ))}
+        </div>
+        <div className="flex gap-5">
+          {skills.map((skill, i) => (
+            <div className="w-[5rem] h-[5rem]" key={i}>
+              <skill.icon className="w-full h-full" />
+            </div>
+          ))}
+        </div>
+        <div className="flex gap-5">
+          {skills.map((skill, i) => (
+            <div className="w-[5rem] h-[5rem]" key={i}>
+              <skill.icon className="w-full h-full" />
+            </div>
+          ))}
+        </div>
       </div>
     </motion.div>
   );
